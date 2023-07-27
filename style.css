@@ -1,0 +1,146 @@
+/* Reset some default styles to ensure consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  body{
+    background-color: rgb(90, 5, 180);
+    color: white;
+    
+    font-family: 'Poppins', sans-serif;
+  }
+  /* Set a background color and text color for the header */
+  header {
+    background-color:rgb(57, 6, 112);
+    color:white;
+    padding: 10px;
+    padding-right: 20px;
+    display: block;
+  }
+  
+  /* Style the navigation bar */
+  .navStyle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  /* Style the left part of the navigation bar (logo or site name) */
+  .left {
+    font-size: 24px;
+  }
+  
+  /* Style the right part of the navigation bar (menu items) */
+  .right {
+    display: flex;
+    margin-right: 40px;
+    
+  }
+  
+  .list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .list li {
+    margin-left: 55px;
+    cursor: pointer;
+  }
+  
+  /* Add some basic hover effect for the menu items */
+  .list li:hover {
+    color: #ff9900; /* Change to your desired hover color */
+  }
+
+  .container{
+    display: flex;
+  }
+  
+  .left-half{
+    width: 40%;
+    height: 50%;
+    margin-top: 10%;
+    margin-left: 5%;
+    font-family: "Lucida Console", Monaco, monospace;
+    display:block;
+    font-size: 30px;
+    padding: 20px;
+    color:white;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5); 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    position:relative;
+    border-radius: 10px;
+  }
+.blue{
+  color:gold;
+}
+  .right-half{
+    width: 40%;
+    height:50%;
+    margin: 5%;
+    padding-left: 40px;
+    
+  }
+
+  .right-half img {
+    width: 80%; /* Make the image take the full width of the container */
+    height: 60%; /* Maintain the image's aspect ratio */
+  }
+
+.button{
+   position: absolute;
+    bottom: -120px; /* Adjust this value to control the vertical position */
+    left: 20%; /* Center the button horizontally */
+    transform: translateX(-50%);
+    background: transparent;
+    color: white;
+    border: 2px solid rgba(255,255,255,0.5); 
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+  }
+  .button button{
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;  
+  }
+  .button button:hover {
+    color: #ff9900; /* Change to your desired hover color */
+  }
+.footer{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(57, 6, 112);
+}
+a{
+  height: 50px;
+  width:50px;
+  background-color: aliceblue;
+  border-radius: 50px;
+text-align: center;
+margin-right: 50px;
+margin-left: 50px;
+margin-bottom: 10px;
+margin-top: 10px;
+line-height: 50px;
+box-shadow: 1px 4px 2px 2px black;
+color :black
+}
+a i{
+transition: all 0.3 linear;
+}
+a:hover i{
+  transform: scale(1.3);
+}
