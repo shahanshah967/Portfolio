@@ -141,3 +141,52 @@ a i {
 a:hover i {
   transform: scale(1.3);
 }
+
+/* styling for the Project Page  */
+
+.projectMain {
+  height: 100%;
+  padding: 20px;
+  margin: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.projectList {
+  margin: 25px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.project {
+  margin: 25px;
+  padding: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.projectTitle {
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+}
+.description {
+  padding: 5px;
+  margin: 10px;
+}
+.paragraph {
+  margin: 10px;
+  padding: 5px;
+}
+.buttonStyle {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px;
+  background-color: #ff8400;
+  margin-left: 18px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  height: 35px;
+  width: 100px;
+  font-weight: bold;
+}
