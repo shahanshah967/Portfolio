@@ -4,10 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: rgb(90, 5, 180);
   color: white;
-
   font-family: "Poppins", sans-serif;
 }
 /* Set a background color and text color for the header */
@@ -18,14 +18,12 @@ header {
   padding-right: 20px;
   display: block;
 }
-
 /* Style the navigation bar */
 .navStyle {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  height: 40px;
 }
 
 /* Style the left part of the navigation bar (logo or site name) */
@@ -44,14 +42,18 @@ header {
   display: flex;
 }
 
-.list li {
+.list li a {
   margin-left: 55px;
   cursor: pointer;
+  background: transparent;
+  color: white;
+  text-decoration: none;
 }
 
 /* Add some basic hover effect for the menu items */
-.list li:hover {
-  color: #ff9900; /* Change to your desired hover color */
+.list li a:hover {
+  color: #ff9900;
+  /* Change to your desired hover color */
 }
 
 .container {
@@ -74,6 +76,7 @@ header {
   position: relative;
   border-radius: 10px;
 }
+
 .blue {
   color: gold;
 }
@@ -85,14 +88,18 @@ header {
 }
 
 .right-half img {
-  width: 80%; /* Make the image take the full width of the container */
-  height: 60%; /* Maintain the image's aspect ratio */
+  width: 80%;
+  /* Make the image take the full width of the container */
+  height: 60%;
+  /* Maintain the image's aspect ratio */
 }
 
 .button {
   position: absolute;
-  bottom: -120px; /* Adjust this value to control the vertical position */
-  left: 20%; /* Center the button horizontally */
+  bottom: -120px;
+  /* Adjust this value to control the vertical position */
+  left: 20%;
+  /* Center the button horizontally */
   transform: translateX(-50%);
   background: transparent;
   color: white;
@@ -103,6 +110,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .button button {
   background: transparent;
   border: none;
@@ -111,19 +119,22 @@ header {
   font-size: 15px;
   cursor: pointer;
 }
+
 .button button:hover {
-  color: #ff9900; /* Change to your desired hover color */
+  color: #ff9900;
+  /* Change to your desired hover color */
 }
+
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(57, 6, 112);
-  height: 45px;
 }
-a {
-  height: 35px;
-  width: 35px;
+
+.jalebi {
+  height: 50px;
+  width: 50px;
   background-color: aliceblue;
   border-radius: 50px;
   text-align: center;
@@ -131,18 +142,83 @@ a {
   margin-left: 50px;
   margin-bottom: 10px;
   margin-top: 10px;
-  line-height: 35px;
+  line-height: 50px;
   box-shadow: 1px 4px 2px 2px black;
   color: black;
 }
-a i {
+
+.jalebi i {
   transition: all 0.3 linear;
 }
-a:hover i {
+
+.jalebi:hover i {
   transform: scale(1.3);
 }
 
-/* styling for the Project Page  */
+/*---------------------------------------------- Style for contact section--------------------------------------------- */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.photo {
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.form-box {
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  height: 450px;
+  width: 100px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.photo img {
+  width: 70%;
+  height: auto;
+}
+
+.form-box form {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  height: 400px;
+  width: 65%;
+  margin: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgb(57, 6, 112);
+}
+
+.form-row {
+  padding: 20px;
+  width: 60%;
+}
+.input-field {
+  width: 120%;
+  height: 70%;
+  color: white;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid rgba(246, 243, 243, 0.5);
+}
+form button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 20px;
+}
 
 .projectMain {
   height: 100%;
@@ -189,4 +265,87 @@ a:hover i {
   height: 35px;
   width: 100px;
   font-weight: bold;
+}
+
+/*----------------------------------------style for about section----------------------------------------------------------*/
+
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner1 {
+  flex-basis: 50%;
+  padding: 20px;
+}
+.inner2 {
+  flex-basis: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.inner2 img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover; /* Adjust to your preference (cover, contain, etc.) */
+
+}
+.about-me {
+  flex: 1;
+  /* background-color: red; */
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.qualification {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.skill {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.skillContainer {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  flex-direction: column;
+  display: flex;
+}
+.buttonContainer1 {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+}
+.certification {
+  flex: 1;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+.btech {
+  margin: 5px;
+  padding: 5px;
+}
+.certificateContainer{
+  display: flex;
+  justify-content: space-between;
+}
+.certificateContainer img{
+  height:150px;
+  width:150px;
+  margin:20px;
 }
